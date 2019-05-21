@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>心情 | Private Wonderland</title>
+<title>原来标题要短 | Private Wonderland</title>
 <meta name="description" content="不会爱别人，也不懂爱自己，只在这里呢喃。">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -12,6 +12,12 @@
 <link rel="shortcut icon" href="https://zeus-cn.github.io//favicon.ico?v=1558404721707">
 <link rel="stylesheet" href="https://zeus-cn.github.io//styles/main.css">
 
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
 
 
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
@@ -99,48 +105,49 @@
 
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
-          <h2 class="current-tag">标签: 心情</h2>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://zeus-cn.github.io//post/mi-yi-yang-de-nan-ren-jia-521-geng-xin">
-                  <h2 class="post-title">谜一样的男人——嘉（5.21更新）</h2>
-                </a>
-                <div class="post-date">
-                  2019-05-14
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-                <a class="right" href="https://zeus-cn.github.io//post/mi-yi-yang-de-nan-ren-jia-521-geng-xin">
-                  <div class="feature-container" style="background-image: url('https://ae01.alicdn.com/kf/HTB1w_ViXACy2eVjSZSyq6xukVXaz.jpg')">
-                  </div>
-                </a>
-              
-            </article>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://zeus-cn.github.io//post/xin-jian-li-de-jing-tai-wang-ye-bo-ke">
-                  <h2 class="post-title">新建立的静态网页博客</h2>
-                </a>
-                <div class="post-date">
-                  2019-05-10
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-            </article>
-          
+          <div class="post-detail">
+            <h2 class="post-title">原来标题要短</h2>
+            <div class="post-date">2019-05-21</div>
+            
+            <div class="post-content">
+              <p>今天看到帖子里面的评论功能不能用，我就纳闷儿了，之前还能用呢，然后就打开了自己的静态博客，发现有的评论就没问题，嘉那篇帖子的评论就有问题。</p>
+<p>赶紧打开<a href="https://github.com/gitalk/gitalk/blob/master/readme-cn.md">Gitalk Document</a>，看了看里面的要求，无意中发现了：</p>
+<pre><code>id String
 
-          <div class="pagination-container">
-  
-  
-</div>
+Default: location.href.
+
+页面的唯一标识。长度必须小于50。
+</code></pre>
+<p>懵懵懂懂的我觉得可能和评论不能用有关系，所以就去修改了每篇博客的标题。</p>
+<blockquote>
+<blockquote>
+<p><em>我发现页面的唯一标识就是博客的标题拼音</em></p>
+</blockquote>
+</blockquote>
+<p>结果当然是成功了！</p>
+
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://zeus-cn.github.io//post/di-yi-ci-shi-yong-xiu-chi-de-xiao-wan-ju">
+                  <h3 class="post-title">
+                    第一次使用羞耻的小玩具
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
 
         </div>
       </div>
@@ -162,6 +169,29 @@ var app = new Vue({
 })
 
 </script>
+
+
+  
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: '540f61cc563a840f306d',
+        clientSecret: 'c9358a6561161e89f06a4b7924461a45999bf1f6',
+        repo: 'zeus-cn.github.io',
+        owner: 'zeus-cn',
+        admin: ['zeus-cn'],
+        id: location.pathname,      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
 
 
 
