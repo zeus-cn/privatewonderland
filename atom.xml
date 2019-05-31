@@ -1,120 +1,168 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" >
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://zeus-cn.github.io/</id>
+    <title>Private Wonderland</title>
+    <updated>2019-05-31T07:41:19.737Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://zeus-cn.github.io/"/>
+    <link rel="self" href="https://zeus-cn.github.io//atom.xml"/>
+    <subtitle>不会爱别人，也不懂爱自己，只在这里呢喃。</subtitle>
+    <logo>https://zeus-cn.github.io//images/avatar.png</logo>
+    <icon>https://zeus-cn.github.io//favicon.ico</icon>
+    <rights>All rights reserved 2019, Private Wonderland</rights>
+    <entry>
+        <title type="html"><![CDATA[这种药最好别吃]]></title>
+        <id>https://zeus-cn.github.io//post/vaGWHUqL0</id>
+        <link href="https://zeus-cn.github.io//post/vaGWHUqL0">
+        </link>
+        <updated>2019-05-24T09:00:03.000Z</updated>
+        <content type="html"><![CDATA[<p>希望健康的人永远也不要吃<a href="https://zh.wikipedia.org/wiki/%E8%89%BE%E5%8F%B8%E8%A5%BF%E9%85%9E%E6%99%AE%E5%85%B0">草酸艾司西酞普兰</a></p>
+<p>最近想把它戒掉，发现根本戒不了。可能是我的减药方法不对，可能是药物依赖，吃完这个要确实要好很多，而且白癜风也没有扩散的趋势。</p>
+<p>昨天很难受，感觉心突突的，紧张感、焦虑感又来了。看了看自己左手的大拇指，好像有一处外伤有变白的趋势，不知道和我不正确的停药有没有关系。</p>
+<p>吃一辈子可能也挺好吧，虽然吃完反应慢点，但是总好过心悬着的感觉啊！</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[原来标题要短]]></title>
+        <id>https://zeus-cn.github.io//post/yuan-lai-biao-ti-yao-duan</id>
+        <link href="https://zeus-cn.github.io//post/yuan-lai-biao-ti-yao-duan">
+        </link>
+        <updated>2019-05-21T02:06:25.000Z</updated>
+        <content type="html"><![CDATA[<p>今天看到帖子里面的评论功能不能用，我就纳闷儿了，之前还能用呢，然后就打开了自己的静态博客，发现有的评论就没问题，嘉那篇帖子的评论就有问题。</p>
+<p>赶紧打开<a href="https://github.com/gitalk/gitalk/blob/master/readme-cn.md">Gitalk Document</a>，看了看里面的要求，无意中发现了：</p>
+<pre><code>id String
 
-<title>谜一样的男人——嘉（5.31更新） | Private Wonderland</title>
-<meta name="description" content="不会爱别人，也不懂爱自己，只在这里呢喃。">
+Default: location.href.
 
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://zeus-cn.github.io//favicon.ico?v=1559288475642">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
-<link rel="stylesheet" href="https://zeus-cn.github.io//styles/main.css">
-
-
-  
-    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
-  
-
-  
-
-
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139942705-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-139942705-1');
-</script>
-
-
-  </head>
-  <body>
-    <div id="app" class="main">
-
-      <div class="sidebar" :class="{ 'full-height': menuVisible }">
-  <div class="top-container" data-aos="fade-right">
-    <div class="top-header-container">
-      <a class="site-title-container" href="https://zeus-cn.github.io/">
-        <img src="https://zeus-cn.github.io//images/avatar.png?v=1559288475642" class="site-logo">
-        <h1 class="site-title">Private Wonderland</h1>
-      </a>
-      <div class="menu-btn" @click="menuVisible = !menuVisible">
-        <div class="line"></div>
-      </div>
-    </div>
-    <div>
-      
-        
-          <a href="https://zeus-cn.github.io/" class="site-nav">
-            首页
-          </a>
-        
-      
-        
-          <a href="https://zeus-cn.github.io//archives" class="site-nav">
-            归档
-          </a>
-        
-      
-        
-          <a href="https://zeus-cn.github.io//tags" class="site-nav">
-            标签
-          </a>
-        
-      
-        
-          <a href="https://zeus-cn.github.io/" class="site-nav">
-            关于
-          </a>
-        
-      
-    </div>
-  </div>
-  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
-    <div class="social-container">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-    <div class="site-description">
-      不会爱别人，也不懂爱自己，只在这里呢喃。
-    </div>
-    <div class="site-footer">
-      得不到的永远在骚动，被偏爱的都有恃无恐。 | <a class="rss" href="https://zeus-cn.github.io//atom.xml" target="_blank">RSS</a>
-    </div>
-  </div>
-</div>
-
-
-      <div class="main-container">
-        <div class="content-container" data-aos="fade-up">
-          <div class="post-detail">
-            <h2 class="post-title">谜一样的男人——嘉（5.31更新）</h2>
-            <div class="post-date">2019-05-14</div>
-            
-              <div class="feature-container" style="background-image: url('https://ae01.alicdn.com/kf/HTB1w_ViXACy2eVjSZSyq6xukVXaz.jpg')">
-              </div>
-            
-            <div class="post-content">
-              <p>这个人是在一个群里认识的，当时看到他的微信头像，“不错嘛，这肌肉，挺匀称”，再一看地方，北京西城，我立马就产生了加他的想法，就是一瞬间，我觉的我喜欢他。</p>
+页面的唯一标识。长度必须小于50。
+</code></pre>
+<p>懵懵懂懂的我觉得可能和评论不能用有关系，所以就去修改了每篇博客的标题。</p>
+<blockquote>
+<blockquote>
+<p><em>我发现页面的唯一标识就是博客的标题拼音</em></p>
+</blockquote>
+</blockquote>
+<p>结果当然是成功了！（目前已经在设置中将页面标识换成Short ID了）</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[第一次使用羞耻的小玩具]]></title>
+        <id>https://zeus-cn.github.io//post/di-yi-ci-shi-yong-xiu-chi-de-xiao-wan-ju</id>
+        <link href="https://zeus-cn.github.io//post/di-yi-ci-shi-yong-xiu-chi-de-xiao-wan-ju">
+        </link>
+        <updated>2019-05-17T12:50:32.000Z</updated>
+        <content type="html"><![CDATA[<p>今天值班，从白天开始就盼望着能试用羞耻的小玩具。好不容易盼到了下班，结果好几个人都不走，就在办公室，我这个急啊！晚上八点多钟，他们都走了，我迫不及待的洗了洗小玩具，拿出消毒液和润滑剂开始操作起来。</p>
+<blockquote>
+<p><em>其实我的内心是极其忐忑又渴望的。忐忑是因为从来没用过，而且也没想到自己会堕落到使用这个东西的地步；渴望是因为都说前列腺高潮如何如何好，我真想亲身尝试一下</em></p>
+</blockquote>
+<p>将菊花和小玩具都抹上润滑剂之后，我开始了动作。说实话，我没有自己插过自己，这是生下来头一次。怎么说呢，感觉挺奇妙，因为我怕疼所以故意买的小的，方便进入。我先松了一口气，放松括约肌，把小玩具的头放到菊花门口，慢慢的往里顶，“还好，不疼”，我又用力顶了顶，遇到了瓶颈，我按照网上说的方法开始呼气，然后就感觉到括约肌在收缩，往里吸的感觉，然后我再配合着往里送，终于插进去了，还好，全程没有什么痛苦。</p>
+<blockquote>
+<p><em>终于插进去了，赶紧开始，享受高潮吧！</em></p>
+</blockquote>
+<p>我赶紧把小玩具与遥控器配对，然后充满期待的打开遥控器。额，没啥感觉啊！我再等等。。。
+怎么还是没什么感觉啊！没有所谓的舒服的欲仙欲死的感觉啊！这是为什么？难道实我的姿势不对吗？我赶紧坐直了，让小玩具插得更深入。可是，依旧没有感觉的如潮水般的快感。</p>
+<blockquote>
+<p><em>难道是我的那个什么太深了吗？</em></p>
+</blockquote>
+<p>使劲往里插了几下，依旧没什么特别的感觉。索性拿出来当震动棒用了，来了一发。</p>
+<p>感觉买了个鸡肋的东西，本来是要享受高潮的，结果完全没有预期，失败的购物！</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[令人羞耻的小玩具]]></title>
+        <id>https://zeus-cn.github.io//post/ling-ren-xiu-chi-de-xiao-wan-ju</id>
+        <link href="https://zeus-cn.github.io//post/ling-ren-xiu-chi-de-xiao-wan-ju">
+        </link>
+        <updated>2019-05-16T09:22:52.000Z</updated>
+        <content type="html"><![CDATA[<p>别的不说，先上图！
+<img src="https://ae01.alicdn.com/kf/HTB1WPaqXQCy2eVjSZPfq6zdgpXa5.jpg" alt="">
+哈哈，这玩意儿我突然抽风想买来试试，头不大，应该比较容易吧，明天试试。</p>
+<p>我可能有点太不要脸了！
+<img src="https://ae01.alicdn.com/kf/HTB1sJQCV4naK1RjSZFBq6AW7VXaB.jpg" alt=""></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[街拍的帅哥们（5.31更新）]]></title>
+        <id>https://zeus-cn.github.io//post/jie-pai-de-shuai-ge-men-520-geng-xin</id>
+        <link href="https://zeus-cn.github.io//post/jie-pai-de-shuai-ge-men-520-geng-xin">
+        </link>
+        <updated>2019-05-14T08:33:39.000Z</updated>
+        <content type="html"><![CDATA[<blockquote>
+<p>2019年5月13日，拍摄于地铁4号线</p>
+</blockquote>
+<p><img src="https://pic.superbed.cn/item/5cda7dab28b3233db968b516" alt="">
+就是喜欢你的腿
+<img src="https://pic.superbed.cn/item/5cda7dcb28b3233db968b94a" alt="就是喜欢你的腿"></p>
+<hr>
+<blockquote>
+<p>2019年5月17日，拍摄于地铁2号线</p>
+</blockquote>
+<p>这性感的大屁股，好想咬一口！！！</p>
+<p><img src="https://ae01.alicdn.com/kf/HTB1eIRDWgHqK1RjSZJnq6zNLpXak.jpg" alt=""></p>
+<p><img src="https://ae01.alicdn.com/kf/HTB1eIRDWgHqK1RjSZJnq6zNLpXak.jpg" alt=""></p>
+<p><img src="https://pic.superbed.cn/item/5cde1434697df1fd0ce08577" alt=""></p>
+<p><img src="https://ae01.alicdn.com/kf/HTB1dn6LXQCy2eVjSZPfq6zdgpXax.jpg" alt=""></p>
+<p><img src="https://ae01.alicdn.com/kf/HTB1qm4AWjTpK1RjSZKPq6y3UpXaP.jpg" alt=""></p>
+<hr>
+<blockquote>
+<p>2019年5月18日，拍摄于地铁4号线</p>
+</blockquote>
+<p><img src="https://ae01.alicdn.com/kf/HTB13ZrnXrys3KVjSZFnq6xFzpXaX.jpg" alt=""></p>
+<blockquote>
+<blockquote>
+<p><em>对这种瘦的没有抵抗力</em></p>
+</blockquote>
+</blockquote>
+<p><img src="https://ae01.alicdn.com/kf/HTB1Ov2nXq1s3KVjSZFAq6x_ZXXaT.jpg" alt=""></p>
+<p><img src="https://ae01.alicdn.com/kf/HTB1E4bnXqWs3KVjSZFxq6yWUXXaZ.jpg" alt=""></p>
+<hr>
+<blockquote>
+<p>2019年5月19日，拍摄于龙潭湖体育馆</p>
+</blockquote>
+<p>我喜欢了很久的练球教练了，小鲜肉，第一眼看到就喜欢了。</p>
+<p><img src="https://ae01.alicdn.com/kf/HTB1VBTgXBWD3KVjSZFsq6AqkpXaC.jpg" alt=""></p>
+<p><img src="https://ae01.alicdn.com/kf/HTB1WaroXqWs3KVjSZFxq6yWUXXae.jpg" alt=""></p>
+<p><img src="https://pic.superbed.cn/item/5ce25610697df1fd0c0cd670" alt=""></p>
+<p><img src="https://ae01.alicdn.com/kf/HTB1u5rfXv5G3KVjSZPxq6zI3XXaT.jpg" alt=""></p>
+<blockquote>
+<blockquote>
+<p>2019年5月26日，他自己发于发的朋友圈</p>
+</blockquote>
+</blockquote>
+<p><img src="https://pic1.superbed.cn/item/5cea0e1f451253d178e3b7a1.jpg" alt=""></p>
+<hr>
+<blockquote>
+<p>2019年5月20日，拍摄于西直门桥附近</p>
+</blockquote>
+<p>刚跑完步，迎面来了一个小哥，虽然看不清长相，但是身材什么的还是不错的。</p>
+<p><img src="https://pic.superbed.cn/item/5ce2571f697df1fd0c0ce4e2" alt=""></p>
+<p><img src="https://ae01.alicdn.com/kf/HTB1sxrmXBKw3KVjSZFOq6yrDVXaA.jpg" alt=""></p>
+<hr>
+<blockquote>
+<p>2019年5月30日，拍摄于培训基地</p>
+</blockquote>
+<p>这两个小孩儿我还挺有感觉，可能不是很帅</p>
+<blockquote>
+<blockquote>
+<p><em>这小酒窝，多好看 ！</em></p>
+</blockquote>
+</blockquote>
+<p><img src="https://ae01.alicdn.com/kf/HTB1BMqWa.GF3KVjSZFvq6z_nXXaC.jpg" alt=""></p>
+<p><img src="https://ae01.alicdn.com/kf/HTB1dVK3a8Gw3KVjSZFwq6zQ2FXaB.jpg" alt=""></p>
+<p><img src="https://ae01.alicdn.com/kf/HTB1FjO3a8Kw3KVjSZTEq6AuRpXa2.jpg" alt=""></p>
+<p><img src="https://ae01.alicdn.com/kf/HTB1Yh13a8Cw3KVjSZFlq6AJkFXaT.jpg" alt=""></p>
+<p><img src="https://ae01.alicdn.com/kf/HTB1w4uVa4iH3KVjSZPfq6xBiVXae.jpg" alt=""></p>
+<p><img src="https://puui.qpic.cn/fans_admin/0/3_1379495610_1559288451523/0" alt=""></p>
+<hr>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[谜一样的男人——嘉（5.31更新）]]></title>
+        <id>https://zeus-cn.github.io//post/mi-yi-yang-de-nan-ren-jia-521-geng-xin</id>
+        <link href="https://zeus-cn.github.io//post/mi-yi-yang-de-nan-ren-jia-521-geng-xin">
+        </link>
+        <updated>2019-05-14T07:41:59.000Z</updated>
+        <content type="html"><![CDATA[<p>这个人是在一个群里认识的，当时看到他的微信头像，“不错嘛，这肌肉，挺匀称”，再一看地方，北京西城，我立马就产生了加他的想法，就是一瞬间，我觉的我喜欢他。</p>
 <blockquote>
 <p>当然，我也觉得仅凭一张微信头像就能喜欢一个人很扯，但是，所谓的一见钟情不都是见色起意吗？</p>
 </blockquote>
@@ -265,92 +313,55 @@
 <p><img src="https://ae01.alicdn.com/kf/HTB19iKVa.CF3KVjSZJnq6znHFXan.jpg" alt=""></p>
 <p><img src="https://ae01.alicdn.com/kf/HTB1wAuVa.GF3KVjSZFoq6zmpFXak.jpg" alt=""></p>
 <hr>
-
-            </div>
-            
-              <div class="tag-container">
-                
-                  <a href="https://zeus-cn.github.io//tag/mJX0v6Ad-" class="tag">
-                    G事
-                  </a>
-                
-                  <a href="https://zeus-cn.github.io//tag/3FWB14WmZ" class="tag">
-                    秘密
-                  </a>
-                
-                  <a href="https://zeus-cn.github.io//tag/LuhaxLCLn" class="tag">
-                    心情
-                  </a>
-                
-              </div>
-            
-            
-              <div class="next-post">
-                <div class="next">下一篇</div>
-                <a href="https://zeus-cn.github.io//post/xiao-mi-bi-ji-ben-jia-ssd">
-                  <h3 class="post-title">
-                    小米笔记本加ssd
-                  </h3>
-                </a>
-              </div>
-            
-
-            
-              
-                <div id="gitalk-container" data-aos="fade-in"></div>
-              
-
-              
-            
-
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
-<script type="application/javascript">
-
-AOS.init();
-
-hljs.initHighlightingOnLoad()
-
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
-
-</script>
-
-
-
-  
-    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-    <script>
-
-      var gitalk = new Gitalk({
-        clientID: '540f61cc563a840f306d',
-        clientSecret: 'c9358a6561161e89f06a4b7924461a45999bf1f6',
-        repo: 'zeus-cn.github.io',
-        owner: 'zeus-cn',
-        admin: ['zeus-cn'],
-        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
-        distractionFreeMode: false  // Facebook-like distraction free mode
-      })
-
-      gitalk.render('gitalk-container')
-
-    </script>
-  
-
-  
-
-
-
-
-  </body>
-</html>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[小米笔记本加ssd]]></title>
+        <id>https://zeus-cn.github.io//post/xiao-mi-bi-ji-ben-jia-ssd</id>
+        <link href="https://zeus-cn.github.io//post/xiao-mi-bi-ji-ben-jia-ssd">
+        </link>
+        <updated>2019-05-14T07:18:25.000Z</updated>
+        <content type="html"><![CDATA[<p>按照网上的教程你，一步一步的来，还是挺简单的，加了1块512的ssd，这下空间存储不成问题了。</p>
+<ol>
+<li>这就是买到的盘。<img src="https://ae01.alicdn.com/kf/HTB1GZeTVSzqK1RjSZPxq6A4tVXai.jpg" alt=""></li>
+<li>拆下的螺丝。<img src="https://ae01.alicdn.com/kf/HTB1ubjnVNnaK1RjSZFBq6AW7VXap.jpg" alt=""></li>
+<li>笔记本内部，还是比较紧凑的。<img src="https://ae01.alicdn.com/kf/HTB1sBm0VMHqK1RjSZFgq6y7JXXa4.jpg" alt=""></li>
+<li>盘安装完毕。<img src="https://ae01.alicdn.com/kf/HTB1QPS4VHrpK1RjSZTEq6AWAVXa5.jpg" alt="">
+总的来说还是非常顺利的。唯一让我困惑的一点就是，mSATA的盘居然有两个口，而笔记本接口上居然能是一个对应的口，我反复看<a href="http://www.sohu.com/a/275898204_487833">教程</a>里的图片，才确定我没有插错。
+然后又鼓捣把原来D盘剩下的空间合并到C盘里。用Win10自带的工具需要两个磁盘空间挨着，像这个<a href="https://zhuanlan.zhihu.com/p/35655985">教程</a>。不过我的磁盘空间并没有挨着，又开始搜索方法，最终找到了一个使用PE里面的DiskGen的方法，把磁盘空间合并了，确实很方便。
+至此，大功告成！</li>
+</ol>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[这个面包好吃]]></title>
+        <id>https://zeus-cn.github.io//post/zhe-ge-mian-bao-hao-chi</id>
+        <link href="https://zeus-cn.github.io//post/zhe-ge-mian-bao-hao-chi">
+        </link>
+        <updated>2019-05-13T08:18:01.000Z</updated>
+        <content type="html"><![CDATA[<h3 id="发现了一款面包非常好吃实在草桥的一手店买的回家到网上一搜还真有">发现了一款面包非常好吃，实在草桥的一手店买的，回家到网上一搜，还真有。</h3>
+<p><img src="https://ae01.alicdn.com/kf/HTB1QPltiK3tHKVjSZSgq6x4QFXah.jpg" alt="黑麦大列巴"></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[今天学习了markdown语法]]></title>
+        <id>https://zeus-cn.github.io//post/jin-tian-xue-xi-liao-markdown-yu-fa</id>
+        <link href="https://zeus-cn.github.io//post/jin-tian-xue-xi-liao-markdown-yu-fa">
+        </link>
+        <updated>2019-05-13T02:03:27.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="今天学习了markdown语法">今天学习了markdown语法</h2>
+<p>看起来语法并不难，常用的可能也就那么几种，多加练习一定会掌握的。
+学习的链接在<a href="https://yuhongjun.github.io/tech/2017/05/02/Markdown-%E8%AF%AD%E6%B3%95%E6%89%8B%E5%86%8C-%E5%AE%8C%E6%95%B4%E6%95%B4%E7%90%86%E7%89%88.html#fnref:1">这里</a></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[新建立的静态网页博客]]></title>
+        <id>https://zeus-cn.github.io//post/xin-jian-li-de-jing-tai-wang-ye-bo-ke</id>
+        <link href="https://zeus-cn.github.io//post/xin-jian-li-de-jing-tai-wang-ye-bo-ke">
+        </link>
+        <updated>2019-05-10T07:55:59.000Z</updated>
+        <content type="html"><![CDATA[<p>但是我不知道如何使用。
+希望这个小小的秘密空间能够记录我的一些事情，并不使我暴露于阳光之下</p>
+]]></content>
+    </entry>
+</feed>

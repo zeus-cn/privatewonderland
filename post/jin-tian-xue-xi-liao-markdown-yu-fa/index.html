@@ -9,7 +9,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://zeus-cn.github.io//favicon.ico?v=1558842929442">
+<link rel="shortcut icon" href="https://zeus-cn.github.io//favicon.ico?v=1559288475642">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://zeus-cn.github.io//styles/main.css">
 
 
@@ -44,7 +45,7 @@
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://zeus-cn.github.io/">
-        <img src="https://zeus-cn.github.io//images/avatar.png?v=1558842929442" class="site-logo">
+        <img src="https://zeus-cn.github.io//images/avatar.png?v=1559288475642" class="site-logo">
         <h1 class="site-title">Private Wonderland</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -97,7 +98,7 @@
       不会爱别人，也不懂爱自己，只在这里呢喃。
     </div>
     <div class="site-footer">
-      得不到的永远在骚动，被偏爱的都有恃无恐。
+      得不到的永远在骚动，被偏爱的都有恃无恐。 | <a class="rss" href="https://zeus-cn.github.io//atom.xml" target="_blank">RSS</a>
     </div>
   </div>
 </div>
@@ -159,7 +160,7 @@ var app = new Vue({
 </script>
 
 
-  
+
   
     <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
     <script>
@@ -170,7 +171,7 @@ var app = new Vue({
         repo: 'zeus-cn.github.io',
         owner: 'zeus-cn',
         admin: ['zeus-cn'],
-        id: location.pathname,      // Ensure uniqueness and length less than 50
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
         distractionFreeMode: false  // Facebook-like distraction free mode
       })
 
