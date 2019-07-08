@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://zeus-cn.github.io/</id>
     <title>Private Wonderland</title>
-    <updated>2019-06-26T03:18:19.664Z</updated>
+    <updated>2019-07-08T01:19:06.076Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://zeus-cn.github.io/"/>
     <link rel="self" href="https://zeus-cn.github.io//atom.xml"/>
@@ -10,6 +10,22 @@
     <logo>https://zeus-cn.github.io//images/avatar.png</logo>
     <icon>https://zeus-cn.github.io//favicon.ico</icon>
     <rights>All rights reserved 2019, Private Wonderland</rights>
+    <entry>
+        <title type="html"><![CDATA[桌面时钟的想法（2019.07.08更新）]]></title>
+        <id>https://zeus-cn.github.io//post/o6jmedPb_</id>
+        <link href="https://zeus-cn.github.io//post/o6jmedPb_">
+        </link>
+        <updated>2019-07-08T01:09:26.000Z</updated>
+        <content type="html"><![CDATA[<h3 id="突发的想法">突发的想法</h3>
+<p>上个礼拜二、三的时候，突然看到桌面上的丁香医生桌面日历已经撕掉了一半，突然有个想法，可不可以用树莓派和显示器，再利用python编程，实现我做桌面日历的想法呢？
+下午问了同学，和他说了我的想法，他曾经编过程序，听到我的想法后觉得还是可以实现的，这就更加坚定了我的信心。但是完事开头难，我得先学习python，能简单的看懂代码后，才能改代码实现我的功能。</p>
+<blockquote>
+<p>7月7日
+购买了电子版的《Python编程：从入门到实践》，也在家里把他打印出来了，400多页呢。因为之前看了<a href="https://github.com/jackfrued/Python-100-Days">Python - 100天从新手到大师</a>，还是有点不懂，可能我对编程实在是一窍不通吧，得从最基本的看起才行。</p>
+</blockquote>
+<hr>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[平常的一天]]></title>
         <id>https://zeus-cn.github.io//post/khsj9_JNN</id>
@@ -402,17 +418,6 @@ Default: location.href.
         <updated>2019-05-13T08:18:01.000Z</updated>
         <content type="html"><![CDATA[<h3 id="发现了一款面包非常好吃实在草桥的一手店买的回家到网上一搜还真有">发现了一款面包非常好吃，实在草桥的一手店买的，回家到网上一搜，还真有。</h3>
 <p><img src="https://ae01.alicdn.com/kf/HTB1QPltiK3tHKVjSZSgq6x4QFXah.jpg" alt="黑麦大列巴"></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[今天学习了markdown语法]]></title>
-        <id>https://zeus-cn.github.io//post/jin-tian-xue-xi-liao-markdown-yu-fa</id>
-        <link href="https://zeus-cn.github.io//post/jin-tian-xue-xi-liao-markdown-yu-fa">
-        </link>
-        <updated>2019-05-13T02:03:27.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="今天学习了markdown语法">今天学习了markdown语法</h2>
-<p>看起来语法并不难，常用的可能也就那么几种，多加练习一定会掌握的。
-学习的链接在<a href="https://yuhongjun.github.io/tech/2017/05/02/Markdown-%E8%AF%AD%E6%B3%95%E6%89%8B%E5%86%8C-%E5%AE%8C%E6%95%B4%E6%95%B4%E7%90%86%E7%89%88.html#fnref:1">这里</a></p>
 ]]></content>
     </entry>
 </feed>
